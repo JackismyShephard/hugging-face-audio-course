@@ -1,0 +1,19 @@
+rerun notebook after reinitilization of venv
+ - add more pip packages if they are needed
+ - fix bug in packages if they are present
+	- consider using pytroch 11.8 instead of 12 if necessary
+ - remember to uncomment lines after being done with testing
+
+implement pesq metric 
+	- fix any bugs in implementation of own implemetation of metric pipeline for pesq
+	- remember to uncomment lines after being done with testing
+
+train model without speech enhancement and compare performance with the one with speech enhancement
+	- if without enhancement model is better use it
+	- remember rebase repo appropriately based on which model to select
+
+
+train model with pesq for validation
+	- compare with the two prior models and if this one is the best select it 
+	- otherwise it may be that pesq metric is not appropriate and should be scrapped 
+	- might need to train both with and without enhancement?
