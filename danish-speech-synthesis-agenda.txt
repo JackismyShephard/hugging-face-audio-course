@@ -4,6 +4,15 @@ rerun notebook after reinitilization of venv
 	- consider using pytroch 11.8 instead of 12 if necessary
  - remember to uncomment lines after being done with testing
 
+optimize training
+	- use peft
+	- remove hf cache completely and rerun training script from scratch
+	- dont remove max_length arg from model.config
+	- dont use multiple workers for training?
+	- dont use bf16?
+	- dont set reentrant
+	- 
+
 implement pesq metric 
 	- fix any bugs in implementation of own implemetation of metric pipeline for pesq
 	- remember to uncomment lines after being done with testing
