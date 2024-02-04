@@ -12,6 +12,8 @@ optimize training
 	- dont use bf16?
 	- dont set reentrant
 	- 
+optimize inference
+	- use torch.compile for inference
 
 implement pesq metric 
 	- fix any bugs in implementation of own implemetation of metric pipeline for pesq
