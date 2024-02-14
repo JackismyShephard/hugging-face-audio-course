@@ -7,15 +7,13 @@ sudo apt-get -y install cuda-12-1
 rm -rf cuda-keyring_1.1-1_all.deb
 # make and activate virtual environment
 sudo apt install python3-venv
-python3 -m venv .venv
+python3 -m venv .venv --upgrade-deps
 source .venv/bin/activate
 # install dependencies in virtual environment
-pip install --upgrade pip
 pip install -r requirements-frozen.txt
 git clone https://github.com/NVIDIA/apex
 sudo apt-get install ninja-build
-cd apex
 pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation \
-    --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" ./
-cd ..
+    --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" ./apex
+rm -rf apex
 pip cache purge
