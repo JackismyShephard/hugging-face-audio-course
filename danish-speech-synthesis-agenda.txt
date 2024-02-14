@@ -2,19 +2,15 @@ optimize training
 	- use peft
 	- use torch.compile
 
-
 optimize inference
 	- use torch.compile for inference
 	- use int8 mixed precision training 
 	- remember to load vocoder to gpu
 	- use optimum/ONNX runtime (ORT)
 
-fix bugs with tqdm progress bars
-
 train model without speech enhancement and compare performance with the one with speech enhancement
 	- if without enhancement model is better use it
 	- remember rebase repo appropriately based on which model to select
-
 
 train model with mcd for validation
 	- compare with the two prior models and if this one is the best select it 
