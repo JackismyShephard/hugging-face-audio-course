@@ -8,4 +8,4 @@ source ./setup.sh
 ``` 
 This will install [CUDA Toolkit 12.1](https://developer.nvidia.com/cuda-12-1-0-download-archive) system-wide. 
 
-Scripts have been tested in [Visual studio Code](https://code.visualstudio.com/).
+Scripts have been tested in [Visual studio Code](https://code.visualstudio.com/) on Ubuntu 22.04.
