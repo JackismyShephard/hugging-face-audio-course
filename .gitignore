@@ -1,6 +1,3 @@
 .venv
-hf_cache
 speecht5_tts-finetuned-nst-da
-speecht5_tts-finetuned-nst-da-old
-speecht5_tts-finetuned-nst-da-test
 apex
