@@ -10,7 +10,7 @@ sudo apt install python3-venv
 python3 -m venv .venv --upgrade-deps
 source .venv/bin/activate
 # install dependencies in virtual environment
-pip install -r requirements-frozen.txt
+pip install -r requirements.txt
 git clone https://github.com/NVIDIA/apex
 sudo apt-get install ninja-build
 pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation \
