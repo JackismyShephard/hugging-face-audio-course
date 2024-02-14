@@ -1,0 +1,16 @@
+ipywidgets
+wheel
+setuptools
+torch
+tensorboard
+transformers
+accelerate
+datasets[audio]
+speechbrain
+resemble-enhance
+Cython
+pesq
+peft
+evaluate
+jiwer
+bitsandbytes
