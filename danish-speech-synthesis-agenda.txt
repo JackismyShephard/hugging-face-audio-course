@@ -1,30 +1,28 @@
-rerun notebook after reinitilization of venv
- - add more pip packages if they are needed
- - fix bug in packages if they are present
-	- consider using pytroch 11.8 instead of 12 if necessary
- - remember to uncomment lines after being done with testing
-
 optimize training
 	- use peft
-	- remove hf cache completely and rerun training script from scratch
-	- dont remove max_length arg from model.config
-	- dont use multiple workers for training?
-	- dont use bf16?
-	- dont set reentrant
-	- 
+	- use torch.compile
+
+
 optimize inference
 	- use torch.compile for inference
+	- use int8 mixed precision training 
+	- remember to load vocoder to gpu
+	- use optimum/ONNX runtime (ORT)
 
-implement pesq metric 
-	- fix any bugs in implementation of own implemetation of metric pipeline for pesq
-	- remember to uncomment lines after being done with testing
+fix bugs with tqdm progress bars
 
 train model without speech enhancement and compare performance with the one with speech enhancement
 	- if without enhancement model is better use it
 	- remember rebase repo appropriately based on which model to select
 
 
-train model with pesq for validation
+train model with mcd for validation
 	- compare with the two prior models and if this one is the best select it 
-	- otherwise it may be that pesq metric is not appropriate and should be scrapped 
+	- otherwise it may be that mcd metric is not appropriate and should be scrapped 
 	- might need to train both with and without enhancement?
+
+compile nst-da + folketinget balanced dataset
+	-flere mænd
+	- længere video klip
+	- bedre optagelseskvalitet
+
