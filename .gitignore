@@ -1,4 +1,3 @@
 .venv
 speecht5_tts-finetuned-nst-da
-apex
 hf_cache
