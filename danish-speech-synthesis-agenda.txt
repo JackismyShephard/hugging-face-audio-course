@@ -4,9 +4,14 @@ optimize training
 
 optimize inference
 	- use torch.compile for inference
-	- use int8 mixed precision training 
+	- use int8 (use_fp8?) mixed precision training 
 	- remember to load vocoder to gpu
 	- use optimum/ONNX runtime (ORT)
+
+try other model
+	facebook/mms
+	metavoiceio/metavoice-1B-v0.1
+	coqui/XTTS-v2
 
 train model without speech enhancement and compare performance with the one with speech enhancement
 	- if without enhancement model is better use it
