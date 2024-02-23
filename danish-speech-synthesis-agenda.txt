@@ -1,29 +1,16 @@
-optimize training
-	- use peft
-	- use torch.compile
-
 optimize inference
 	- use torch.compile for inference
 	- use int8 (use_fp8?) mixed precision training 
 	- remember to load vocoder to gpu
 	- use optimum/ONNX runtime (ORT)
 
-try other model
+try other models
 	facebook/mms
 	metavoiceio/metavoice-1B-v0.1
 	coqui/XTTS-v2
 
-train model without speech enhancement and compare performance with the one with speech enhancement
-	- if without enhancement model is better use it
-	- remember rebase repo appropriately based on which model to select
-
-train model with mcd for validation
-	- compare with the two prior models and if this one is the best select it 
-	- otherwise it may be that mcd metric is not appropriate and should be scrapped 
-	- might need to train both with and without enhancement?
-
 compile nst-da + folketinget balanced dataset
 	-flere mænd
-	- længere video klip
+	- længere audio klip
 	- bedre optagelseskvalitet
 
