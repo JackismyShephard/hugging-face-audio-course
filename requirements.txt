@@ -1,6 +1,5 @@
 ipykernel
 ipywidgets
-wheel
 setuptools
 torch
 tensorboard
@@ -9,10 +8,9 @@ accelerate
 datasets[audio]
 speechbrain
 resemble-enhance
-Cython
-pesq
-peft
 evaluate
 jiwer
+pesq
 mel-cepstral-distance
+peft
 bitsandbytes
